@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ControlIO Version="v1.0.0">
+  <Properties SyncReset="true" CycleTime="10" />
+  <Diagram DiagramPosition="-371,-281" DiagramScale="0.746215396636627">
+    <NodeData Key="2" Location="-250 310" NodeType="InputBit" MemMapAddress="1" NodeDescription="Selector 1 (Off)" />
+    <NodeData Key="3" Location="-240 460" NodeType="InputBit" MemMapAddress="0" NodeDescription="Selector 1 (On)" />
+    <NodeData Key="5" Location="-85 410" NodeType="OutputBit" MemMapAddress="2" NodeDescription="Curved Roller Conveyor 1 CW" />
+    <NodeData Key="6" Location="-85 510" NodeType="OutputBit" MemMapAddress="3" NodeDescription="Curved Roller Conveyor 2 CW" />
+    <NodeData Key="7" Location="95 455" NodeType="OutputBit" MemMapAddress="0" NodeDescription="Belt Conveyor (4m) 1" />
+    <NodeData Key="8" Location="85 375" NodeType="OutputBit" MemMapAddress="4" NodeDescription="Roller Conveyor (2m) 1" />
+    <NodeData Key="9" Location="90 550" NodeType="OutputBit" MemMapAddress="5" NodeDescription="Roller Conveyor (4m) 1" />
+    <NodeData Key="4" Location="-130 310" NodeType="OutputBit" MemMapAddress="498" NodeDescription="FACTORY I/O (Reset)" />
+    <NodeData Key="11" Location="-260 50" NodeType="CycleTime" />
+    <NodeData Key="14" Location="-260 135" NodeType="NumericalSource" OutSource="10" SourceValue="10" MinValue="0" MaxValue="10000" />
+    <NodeData Key="13" Location="-85 70" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessThan" />
+    <NodeData Key="15" Location="65 105" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.TOf" />
+    <NodeData Key="16" Location="-80 195" NodeType="NumericalSource" OutSource="200" SourceValue="200" MinValue="0" MaxValue="10000" />
+    <NodeData Key="17" Location="175 55" NodeType="OutputBit" MemMapAddress="1" NodeDescription="Emitter 1 (Emit)" />
+    <NodeData Key="18" Location="165 160" NodeType="OutputBit" MemMapAddress="498" NodeDescription="FACTORY I/O (Reset)" />
+    <LinkData From="3" To="5" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="3" To="6" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="3" To="7" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="6" To="9" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="5" To="8" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="2" To="4" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="11" To="13" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="14" To="13" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="13" To="15" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="16" To="15" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="15" To="17" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="15" To="18" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+  </Diagram>
+</ControlIO>
