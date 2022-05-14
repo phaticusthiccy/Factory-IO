@@ -1,0 +1,10 @@
+Name,Type,Data Type,Address
+Selector 1 (On),Input,Bool,BOOL_IN_0
+Selector 1 (Off),Input,Bool,BOOL_IN_1
+Curved Roller Conveyor 2 CW,Output,Bool,BOOL_OUT_0
+Curved Roller Conveyor 2 CW,Output,Bool,BOOL_OUT_1
+Roller Conveyor (2m) 1,Output,Bool,BOOL_OUT_2
+Roller Conveyor (4m) 1,Output,Bool,BOOL_OUT_3
+Belt Conveyor (4m) 1,Output,Bool,BOOL_OUT_4
+Emitter 1 (Emit),Output,Bool,BOOL_OUT_14
+FACTORY I/O (Reset),Output,Bool,BOOL_OUT_15
